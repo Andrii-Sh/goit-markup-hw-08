@@ -1,0 +1,33 @@
+@mixin primary-btn($minw: 200px, $minh: 50px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    cursor: pointer;
+    
+    min-width: $minw;
+    min-height: $minh;
+
+    border-radius: 4px;  
+    border-width: 0;
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+
+    color: var(--logo-secondary-color);
+    background-color: var(--brand-color);
+
+    transition: background-color var(--hover-focus-duration) var(--hover-focus-timing-function);
+
+    &:hover, &:focus {
+        background-color: var(--hero-btn-backhround-hover);
+    }
+}
+    
+ @mixin section ($pt: 94px, $pb: 94px) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+ }

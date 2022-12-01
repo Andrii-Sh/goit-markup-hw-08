@@ -1,0 +1,29 @@
+.features {
+    @include section();
+    --cards-in-row: 4;
+}
+
+.features__wrapper {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--portfolio-btn-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features__subtitle {
+    margin-bottom: 10px;
+
+    color: var(--secondary-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+
+.features__text {
+    line-height: calc(24 / 14);
+}

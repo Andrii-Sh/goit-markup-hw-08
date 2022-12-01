@@ -1,0 +1,30 @@
+    :root {
+        --primary-color: #757575;
+        --secondary-color: #212121;
+        --brand-color: #2196F3;
+        --logo-primary-color: #000000;
+        --logo-secondary-color: #FFFFFF;
+        --address-footer-color: rgba(255, 255, 255, 0.6);
+        --address-footer-secondary-color: #ffffff;
+        --hero-and-footer-background-color: #2F303A;
+        --hero-btn-backhround-hover: #188CE8;
+        --portfolio-btn-background-color: #F5F4FA;
+        --team-section-bg-color: #F5F4FA;
+        --team-card-bg-color: #ffffff;
+        --portfolio-card-bg-color: #ffffff;
+        --portfolio-content-border-color: #EEEEEE;
+        --portfolio-overlay-bg-color: rgba(33, 150, 243, 0.9);
+        --socials-primary-fill: #AFB1B8;
+        --socials-secondary-fill: #ffffff;
+        --socials-footer-bg-fill: rgba(255, 255, 255, 0.1);
+        --subscribe-footer-input-bg: rgba(33, 150, 243, 0);
+        --placeholder-color: rgba(117, 117, 117, 0.5);
+        --primary-font-family: 'Roboto',
+            sans-serif;
+        --logo-font-family: 'Raleway',
+            sans-serif;
+        --indent: 30px;
+        --cards-in-row: 3;
+        --hover-focus-duration: 250ms;
+        --hover-focus-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }

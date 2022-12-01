@@ -1,0 +1,16 @@
+.current {
+    color: var(--brand-color);
+
+    &::after {
+        position: absolute;
+        bottom: -1px;
+        content: '';
+            
+        width: 100%;
+        height: 4px;
+            
+        background: var(--brand-color);
+        border-radius: 2px;
+    }
+}
+

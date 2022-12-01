@@ -1,0 +1,29 @@
+.clients {
+    @include section();
+
+    --cards-in-row: 6;
+}
+
+.clients__title {
+    @extend %titles;
+}
+
+.clients__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: var(--socials-primary-fill);
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
+
+    &:hover, &:focus {
+        color: var(--brand-color);
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+}

@@ -1,0 +1,32 @@
+//utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+//base styles
+@import './base/reset';
+@import './base/base';
+@import './base/cards-set';
+@import './base/current';
+
+
+//components styles
+@import './components/container';
+@import './components/logo';
+@import './components/header';
+@import './components/site-nav';
+@import './components/auth-nav';
+@import './components/hero';
+@import './components/features';
+@import './components/activities';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/address';
+@import './components/socials';
+@import './components/subscribe-form';
+@import './components/portfolio';
+@import './components/portfolio-btn';
+@import './components/portfolio-card';
+@import './components/modal';

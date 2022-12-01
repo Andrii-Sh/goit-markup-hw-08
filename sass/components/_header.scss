@@ -1,0 +1,14 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 93px;
+    /* 1 px для нижнього паддінга додається рамкою хедера */
+    padding: 24px 0 24px 0;
+}

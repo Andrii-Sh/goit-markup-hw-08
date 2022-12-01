@@ -1,0 +1,22 @@
+%footer-text {
+    margin-bottom: 20px;
+        
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+        
+    color: var(--logo-secondary-color);
+}
+
+%titles {
+    margin-bottom: 50px;
+        
+    color: var(--secondary-color);
+        
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+}

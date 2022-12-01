@@ -1,0 +1,33 @@
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.auth-nav__link {
+    display: flex;
+    align-items: center;
+
+    padding: 32px 0 31px 0;
+
+    color: inherit;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
+
+    &:hover, &:focus {
+        color: var(--brand-color);
+    }
+}
+
+.auth-nav__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
