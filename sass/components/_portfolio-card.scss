@@ -2,13 +2,10 @@
     background: var(--portfolio-card-bg-color);
 }
 
-.portfolio__card:first-child .portfolio__content {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-bottom: 19px + 36px;
-    }
-}
-
 .portfolio_link {
+    display: flex;
+    flex-direction: column;
+
     transition: box-shadow var(--hover-focus-duration) var(--hover-focus-timing-function);
 
     &:hover, &:focus {
@@ -26,6 +23,8 @@
 }
 
 .portfolio__content {
+    flex-grow: 1;
+
     padding: 20px 23px 19px;
 
     border-right: 1px solid var(--portfolio-content-border-color);
