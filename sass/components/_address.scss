@@ -14,9 +14,19 @@
 }
 
 .address__item {
-    line-height: 1.5;
+    line-height: calc(16 / 14);
 
     &:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:last-child {
+            margin-bottom: 60px;
+        }
     }
 }

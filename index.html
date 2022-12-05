@@ -36,22 +36,13 @@
         <nav class="site-nav">
           <ul class="site-nav__list list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link current"
-                >Студія
-                <!-- <div class="site-nav-line current"></div> -->
-              </a>
+              <a href="./index.html" class="site-nav__link link current">Студія </a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link"
-                >Портфоліо
-                <!-- <div class="site-nav-line"></div> -->
-              </a>
+              <a href="./portfolio.html" class="site-nav__link link">Портфоліо </a>
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link link"
-                >Контакти
-                <!-- <div class="site-nav-line"></div> -->
-              </a>
+              <a href="" class="site-nav__link link">Контакти </a>
             </li>
           </ul>
         </nav>
@@ -74,6 +65,12 @@
             >
           </li>
         </ul>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -93,9 +90,7 @@
       <!-- Особливості -->
       <section class="features">
         <div class="features__container container">
-          <!-- Hidden header -->
           <h2 class="features__title visually-hidden">Особливості</h2>
-          <!-- hidden header -->
           <ul class="list cards-set">
             <li class="features__item cards-set-item">
               <div class="features__wrapper">
@@ -152,7 +147,8 @@
           <ul class="list cards-set">
             <li class="activities__item cards-set-item">
               <img
-                src="./images/our-activities-1.jpg"
+                srcset="./images/activities/img-1@1x.jpg 1x, ./images/activities/img-1@2x.jpg 2x"
+                src="./images/activities/img-1@1x.jpg"
                 alt="Людина печатає на клавіатурі"
                 width="370"
                 height="294"
@@ -163,7 +159,8 @@
             </li>
             <li class="activities__item cards-set-item">
               <img
-                src="./images/our-activities-2.jpg"
+                srcset="./images/activities/img-2@1x.jpg 1x, ./images/activities/img-2@2x.jpg 2x"
+                src="./images/activities/img-2@1x.jpg"
                 alt="Людина синхронізує дані зі смартфону на ноутбук"
                 width="370"
                 height="294"
@@ -174,7 +171,8 @@
             </li>
             <li class="activities__item cards-set-item">
               <img
-                src="./images/our-activities-3.jpg"
+                srcset="./images/activities/img-3@1x.jpg 1x, ./images/activities/img-3@2x.jpg 2x"
+                src="./images/activities/img-3@1x.jpg"
                 alt="Людина працює на планшеті"
                 width="370"
                 height="294"
@@ -194,11 +192,21 @@
           <ul class="cards-set list">
             <li class="team__card cards-set-item">
               <img
-                src="./images/our-team-1.jpg"
-                alt="фото члена команди - Ігор Дем'яненко"
-                width="270"
-                height="260"
                 class="team__img"
+                srcset="
+                  ./images/team/img-1_270.jpg 270w,
+                  ./images/team/img-1_354.jpg 354w,
+                  ./images/team/img-1_450.jpg 450w,
+                  ./images/team/img-1_540.jpg 540w,
+                  ./images/team/img-1_708.jpg 708w,
+                  ./images/team/img-1_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-1_450.jpg"
+                alt="фото члена команди - Ігор Дем'яненко"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__content">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
@@ -261,11 +269,21 @@
             </li>
             <li class="team__card cards-set-item">
               <img
-                src="./images/our-team-2.jpg"
-                alt="фото члена команди - Ольга Рєпіна"
-                width="270"
-                height="260"
                 class="team__img"
+                srcset="
+                  ./images/team/img-2_270.jpg 270w,
+                  ./images/team/img-2_354.jpg 354w,
+                  ./images/team/img-2_450.jpg 450w,
+                  ./images/team/img-2_540.jpg 540w,
+                  ./images/team/img-2_708.jpg 708w,
+                  ./images/team/img-2_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-2_450.jpg"
+                alt="фото члена команди - Ольга Рєпіна"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__content">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
@@ -328,11 +346,21 @@
             </li>
             <li class="team__card cards-set-item">
               <img
-                src="./images/our-team-3.jpg"
-                alt="фото члена команди - Микола Тарасов"
-                width="270"
-                height="260"
                 class="team__img"
+                srcset="
+                  ./images/team/img-3_270.jpg 270w,
+                  ./images/team/img-3_354.jpg 354w,
+                  ./images/team/img-3_450.jpg 450w,
+                  ./images/team/img-3_540.jpg 540w,
+                  ./images/team/img-3_708.jpg 708w,
+                  ./images/team/img-3_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-3_450.jpg"
+                alt="фото члена команди - Микола Тарасов"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__content">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
@@ -395,11 +423,21 @@
             </li>
             <li class="team__card cards-set-item">
               <img
-                src="./images/our-team-4.jpg"
-                alt="фото члена команди - Михайло Єрмаков"
-                width="270"
-                height="260"
                 class="team__img"
+                srcset="
+                  ./images/team/img-4_270.jpg 270w,
+                  ./images/team/img-4_354.jpg 354w,
+                  ./images/team/img-4_450.jpg 450w,
+                  ./images/team/img-4_540.jpg 540w,
+                  ./images/team/img-4_708.jpg 708w,
+                  ./images/team/img-4_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-4_450.jpg"
+                alt="фото члена команди - Михайло Єрмаков"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__content">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
@@ -519,88 +557,90 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__contacts">
-          <a href="./index.html" class="footer__logo logo link"
-            ><span class="logo__label">Web</span><span class="logo__label--white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <a href="./index.html" class="footer__logo logo link"
+              ><span class="logo__label">Web</span><span class="logo__label--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/5fsfiBMW47e9YTmSA"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address__link address__link--white link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="socials footer__socials">
+            <p class="socials__text">приєднуйтесь</p>
+            <ul class="socials__list list">
+              <li class="socials__item">
                 <a
-                  href="https://goo.gl/maps/5fsfiBMW47e9YTmSA"
+                  class="socials__link link"
+                  href="https://instagram.com"
+                  aria-label="Instagram"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address__link address__link--white link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link link"
-                  >info@devstudio.com</a
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://twitter.com"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://facebook.com"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://linkedin.com"
+                  aria-label="Linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="socials">
-          <p class="socials__text">приєднуйтесь</p>
-          <ul class="socials__list list">
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://instagram.com"
-                aria-label="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://twitter.com"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://facebook.com"
-                aria-label="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://linkedin.com"
-                aria-label="Linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe-form footer__subscribe-form">
           <p class="subscribe-form__text">Підпишіться на розсилку</p>
@@ -671,7 +711,61 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link current" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link mobile-contacts__link--dark link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <!-- js scripts -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

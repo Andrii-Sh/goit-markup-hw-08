@@ -1,7 +1,20 @@
 .features {
     @include section();
-    --cards-in-row: 4;
+
+    --cards-in-row: 1;
+
+    @media screen and (min-width: 768px) {
+        --cards-in-row: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include section(94px, 94px);
+        
+        --cards-in-row: 4;
+    }
+
 }
+
 
 .features__wrapper {
     display: flex;
@@ -22,8 +35,17 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;        
+    }
 }
 
 .features__text {
     line-height: calc(24 / 14);
+
+    @media screen and (max-width: 767px) {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
 }

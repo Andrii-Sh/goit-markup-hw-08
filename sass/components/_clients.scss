@@ -1,11 +1,26 @@
 .clients {
     @include section();
 
-    --cards-in-row: 6;
+    --cards-in-row: 2;
+
+    @media screen and (min-width: 768px) {
+        --cards-in-row: 3;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --cards-in-row: 6;
+    }
 }
 
 .clients__title {
     @extend %titles;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
 }
 
 .clients__logo {

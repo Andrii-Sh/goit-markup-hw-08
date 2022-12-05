@@ -1,29 +1,50 @@
 .auth-nav {
-    display: flex;
+    display: flex;    
     margin-left: auto;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .auth-nav__item:not(:last-child) {
-    margin-right: 50px;
+    
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
 }
 
 .auth-nav__link {
     display: flex;
     align-items: center;
-
-    padding: 32px 0 31px 0;
-
+  
     color: inherit;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
 
     transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
 
     &:hover, &:focus {
         color: var(--brand-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0 31px 0;
+
+        font-size: 14px;
+        line-height: calc(16 / 14);
     }
 }
 

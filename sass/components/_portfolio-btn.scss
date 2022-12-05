@@ -1,8 +1,26 @@
-.portfolio__btn-list {
+.portfolio_btn-set {
     display: flex;
-    justify-content: center;
+    gap: 8px;
 
-    margin-bottom: 50px;
+    &--upper {
+        margin-bottom: 15px;
+    }
+}
+
+.portfolio__btn-list {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio__btn {
@@ -22,7 +40,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -37,7 +55,7 @@
     }  
 }
 
-.portfolio__btn-item:not(:last-child) {
-    margin-right: 8px;
-}
+// .portfolio__btn-item:not(:last-child) {
+//     margin-right: 8px;
+// }
 

@@ -8,7 +8,15 @@
 }
 
 .header__logo {
-    margin-right: 93px;
-    /* 1 px для нижнього паддінга додається рамкою хедера */
-    padding: 24px 0 24px 0;
+    padding: 16px 0 15px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 26px 0 25px 0;
+        margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+        padding: 24px 0 24px 0;
+    }
 }

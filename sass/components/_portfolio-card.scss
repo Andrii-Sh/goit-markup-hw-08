@@ -2,6 +2,12 @@
     background: var(--portfolio-card-bg-color);
 }
 
+.portfolio__card:first-child .portfolio__content {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 19px + 36px;
+    }
+}
+
 .portfolio_link {
     transition: box-shadow var(--hover-focus-duration) var(--hover-focus-timing-function);
 

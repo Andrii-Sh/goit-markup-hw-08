@@ -35,22 +35,13 @@
         <nav class="site-nav">
           <ul class="site-nav__list list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link"
-                >Студія
-                <!-- <div class="site-nav-line current"></div> -->
-              </a>
+              <a href="./index.html" class="site-nav__link link">Студія </a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link link current"
-                >Портфоліо
-                <!-- <div class="site-nav-line"></div> -->
-              </a>
+              <a href="./portfolio.html" class="site-nav__link link current">Портфоліо </a>
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link link"
-                >Контакти
-                <!-- <div class="site-nav-line"></div> -->
-              </a>
+              <a href="" class="site-nav__link link">Контакти </a>
             </li>
           </ul>
         </nav>
@@ -73,6 +64,12 @@
             >
           </li>
         </ul>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -85,30 +82,43 @@
           <h1 class="portfolio__title visually-hidden">Наші проекти</h1>
           <!-- Hidden header -->
           <ul class="list portfolio__btn-list">
-            <li class="portfolio__btn-item">
-              <button type="button" class="portfolio__btn">Усі</button>
-            </li>
-            <li class="portfolio__btn-item">
-              <button type="button" class="portfolio__btn">Веб-сайти</button>
-            </li>
-            <li class="portfolio__btn-item">
-              <button type="button" class="portfolio__btn">Додатки</button>
-            </li>
-            <li class="portfolio__btn-item">
-              <button type="button" class="portfolio__btn">Дизайн</button>
-            </li>
-            <li class="portfolio__btn-item">
-              <button type="button" class="portfolio__btn">Маркетинг</button>
-            </li>
+            <div class="portfolio_btn-set portfolio_btn-set--upper">
+              <li class="portfolio__btn-item">
+                <button type="button" class="portfolio__btn">Усі</button>
+              </li>
+              <li class="portfolio__btn-item">
+                <button type="button" class="portfolio__btn">Веб-сайти</button>
+              </li>
+              <li class="portfolio__btn-item">
+                <button type="button" class="portfolio__btn">Додатки</button>
+              </li>
+            </div>
+            <div class="portfolio_btn-set">
+              <li class="portfolio__btn-item">
+                <button type="button" class="portfolio__btn">Дизайн</button>
+              </li>
+              <li class="portfolio__btn-item">
+                <button type="button" class="portfolio__btn">Маркетинг</button>
+              </li>
+            </div>
           </ul>
           <ul class="list cards-set">
             <li class="portfolio__card cards-set-item">
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-1.jpg"
+                    srcset="
+                      ./images/portfolio/img-1_354.jpg 354w,
+                      ./images/portfolio/img-1_370.jpg 370w,
+                      ./images/portfolio/img-1_450.jpg 450w,
+                      ./images/portfolio/img-1_708.jpg 700w,
+                      ./images/portfolio/img-1_740.jpg 740w,
+                      ./images/portfolio/img-1_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-1_450.jpg"
                     alt="Презентація членів команди на екрані ноутбуку"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -130,9 +140,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-2.jpg"
+                    srcset="
+                      ./images/portfolio/img-2_354.jpg 354w,
+                      ./images/portfolio/img-2_370.jpg 370w,
+                      ./images/portfolio/img-2_450.jpg 450w,
+                      ./images/portfolio/img-2_708.jpg 700w,
+                      ./images/portfolio/img-2_740.jpg 740w,
+                      ./images/portfolio/img-2_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-2_450.jpg"
                     alt="Баскетболисти"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -154,9 +173,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-3.jpg"
+                    srcset="
+                      ./images/portfolio/img-3_354.jpg 354w,
+                      ./images/portfolio/img-3_370.jpg 370w,
+                      ./images/portfolio/img-3_450.jpg 450w,
+                      ./images/portfolio/img-3_708.jpg 700w,
+                      ./images/portfolio/img-3_740.jpg 740w,
+                      ./images/portfolio/img-3_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-3_450.jpg"
                     alt="Акула та назва ресторану"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -178,9 +206,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-4.jpg"
+                    srcset="
+                      ./images/portfolio/img-4_354.jpg 354w,
+                      ./images/portfolio/img-4_370.jpg 370w,
+                      ./images/portfolio/img-4_450.jpg 450w,
+                      ./images/portfolio/img-4_708.jpg 700w,
+                      ./images/portfolio/img-4_740.jpg 740w,
+                      ./images/portfolio/img-4_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-4_450.jpg"
                     alt="Навушники"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -202,9 +239,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-5.jpg"
+                    srcset="
+                      ./images/portfolio/img-5_354.jpg 354w,
+                      ./images/portfolio/img-5_370.jpg 370w,
+                      ./images/portfolio/img-5_450.jpg 450w,
+                      ./images/portfolio/img-5_708.jpg 700w,
+                      ./images/portfolio/img-5_740.jpg 740w,
+                      ./images/portfolio/img-5_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-5_450.jpg"
                     alt="Дві коробки різного кольору"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -226,9 +272,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-6.jpg"
+                    srcset="
+                      ./images/portfolio/img-6_354.jpg 354w,
+                      ./images/portfolio/img-6_370.jpg 370w,
+                      ./images/portfolio/img-6_450.jpg 450w,
+                      ./images/portfolio/img-6_708.jpg 700w,
+                      ./images/portfolio/img-6_740.jpg 740w,
+                      ./images/portfolio/img-6_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-6_450.jpg"
                     alt="Монітор із включеною презентацією"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -250,9 +305,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-7.jpg"
+                    srcset="
+                      ./images/portfolio/img-7_354.jpg 354w,
+                      ./images/portfolio/img-7_370.jpg 370w,
+                      ./images/portfolio/img-7_450.jpg 450w,
+                      ./images/portfolio/img-7_708.jpg 700w,
+                      ./images/portfolio/img-7_740.jpg 740w,
+                      ./images/portfolio/img-7_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-7_450.jpg"
                     alt="Відкритий журнал"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -274,9 +338,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-8.jpg"
+                    srcset="
+                      ./images/portfolio/img-8_354.jpg 354w,
+                      ./images/portfolio/img-8_370.jpg 370w,
+                      ./images/portfolio/img-8_450.jpg 450w,
+                      ./images/portfolio/img-8_708.jpg 700w,
+                      ./images/portfolio/img-8_740.jpg 740w,
+                      ./images/portfolio/img-8_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-8_450.jpg"
                     alt="Етикетка із назвою бренда"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -298,9 +371,18 @@
               <a href="" class="link portfolio_link">
                 <div class="potfolio__thumb">
                   <img
-                    src="./images/portfolio-project-9.jpg"
+                    srcset="
+                      ./images/portfolio/img-9_354.jpg 354w,
+                      ./images/portfolio/img-9_370.jpg 370w,
+                      ./images/portfolio/img-9_450.jpg 450w,
+                      ./images/portfolio/img-9_708.jpg 700w,
+                      ./images/portfolio/img-9_740.jpg 740w,
+                      ./images/portfolio/img-9_900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img-9_450.jpg"
                     alt="Людина працює за ноутбуком"
-                    width="370"
+                    width="450"
                     height="294"
                     class="potfolio__img"
                   />
@@ -327,94 +409,96 @@
 
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__contacts">
-          <a href="./index.html" class="footer__logo logo link"
-            ><span class="logo__label">Web</span><span class="logo__label--white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">
+        <div class="footer__wrapper">
+          <div class="footer__contacts">
+            <a href="./index.html" class="footer__logo logo link"
+              ><span class="logo__label">Web</span><span class="logo__label--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/5fsfiBMW47e9YTmSA"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address__link address__link--white link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="socials footer__socials">
+            <p class="socials__text">приєднуйтесь</p>
+            <ul class="socials__list list">
+              <li class="socials__item">
                 <a
-                  href="https://goo.gl/maps/5fsfiBMW47e9YTmSA"
+                  class="socials__link link"
+                  href="https://instagram.com"
+                  aria-label="Instagram"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address__link address__link--white link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link link"
-                  >info@devstudio.com</a
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://twitter.com"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://facebook.com"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a
+                  class="socials__link link"
+                  href="https://linkedin.com"
+                  aria-label="Linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="socials">
-          <p class="socials__text">приєднуйтесь</p>
-          <ul class="socials__list list">
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://instagram.com"
-                aria-label="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://twitter.com"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://facebook.com"
-                aria-label="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a
-                class="socials__link link"
-                href="https://linkedin.com"
-                aria-label="Linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="socials__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe-form footer__subscribe-form">
           <p class="subscribe-form__text">Підпишіться на розсилку</p>
           <form name="subscribe_form" class="subscribe-form__form">
             <input type="email" name="email" placeholder="E-mail" class="subscribe-form__input" />
-            <button class="button subscribe__btn" type="submit">
+            <button class="subscribe__btn" type="submit">
               Підписатися
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -424,5 +508,61 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link current" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link mobile-contacts__link--dark link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- js scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -23,8 +23,9 @@
     transform: translate(-50%, -50%) scale(1);
 
     padding: 40px;
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
+
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -35,6 +36,11 @@
     .backdrop.is-hidden & {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.6);
+    }
+
+     @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
     }
 }
 
@@ -77,11 +83,15 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--secondary-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);
+    }
 }
 
 .modal-form__group {
@@ -179,10 +189,15 @@
 }
 
 .modal-form__text {
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
 
     color: var(--primary-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .modal-form__link {

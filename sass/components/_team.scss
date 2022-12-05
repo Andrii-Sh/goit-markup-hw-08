@@ -1,9 +1,17 @@
 .team {
     @include section();
     
-    --cards-in-row: 4;
+    --cards-in-row: 1;
 
     background-color: var(--team-section-bg-color);
+
+    @media screen and (min-width: 768px) {
+        --cards-in-row: 2;        
+    }
+
+    @media screen and (min-width: 1200px) {
+        --cards-in-row: 4;
+    }
 }
 
 .team__title {
@@ -35,9 +43,15 @@
 }
 
 .team__content {
-    padding: 30px 32px;
+    // padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--logo-secondary-color);
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 .team__socials {
