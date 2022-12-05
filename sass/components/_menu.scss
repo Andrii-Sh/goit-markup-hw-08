@@ -59,7 +59,6 @@
     position: absolute;
     top: 10px;
     right: 15px;
-    // color: var(--secondary-color);
 }
 
 .mobile-menu {
@@ -70,9 +69,7 @@
 
     &:not(:last-child) {
     margin-bottom: 32px;
-    }
-
-    
+    }  
 }
 
 .mobile-menu__link {

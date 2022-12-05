@@ -119,10 +119,10 @@ body {
       flex-basis: calc((100% - var(--indent) * (var(--cards-in-row) - 1)) / (var(--cards-in-row)));
 }
 
-.current {
+.site-nav__link.current {
   color: var(--brand-color);
 }
-.current::after {
+.site-nav__link.current::after {
   position: absolute;
   bottom: -1px;
   content: "";
