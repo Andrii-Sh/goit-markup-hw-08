@@ -1303,7 +1303,7 @@ body {
      -moz-appearance: none;
           appearance: none;
   display: block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   outline: 2px solid var(--secondary-color);
   outline-offset: -2px;
