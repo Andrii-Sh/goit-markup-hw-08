@@ -23,7 +23,7 @@
     transform: translate(-50%, -50%) scale(1);
 
     padding: 40px;
-    width: 450px;
+    width: calc(100% - 15px * 2);
     min-height: 609px;
 
 
@@ -36,6 +36,10 @@
     .backdrop.is-hidden & {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.6);
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
     }
 
      @media screen and (min-width: 1200px) {

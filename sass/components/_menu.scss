@@ -16,10 +16,8 @@
     color: var(--secondary-color);
 
     transition: color var(--hover-focus-duration) var(--hover-focus-timing-function);
-}
 
-@media (min-width: 768px) {
-    .menu-toggle {
+    @media (min-width: 768px) {
         display: none;
     }
 }
