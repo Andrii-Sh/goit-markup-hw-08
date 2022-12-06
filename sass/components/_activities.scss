@@ -1,6 +1,6 @@
 .activities {
-    padding-top: 0;
-    @include section(0);
+    // padding-top: 0;
+    @include section(0, 94px);
 
     @media screen and (max-width: 1199px) {
         display: none;        

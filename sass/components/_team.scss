@@ -11,6 +11,8 @@
 
     @media screen and (min-width: 1200px) {
         --cards-in-row: 4;
+
+        @include section(94px, 94px);
     }
 }
 

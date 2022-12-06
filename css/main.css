@@ -63,6 +63,13 @@
   line-height: 1.1785714286;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .clients__title, .team__title, .activities__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
 h1,
 h2,
@@ -474,8 +481,7 @@ body {
 
 .activities {
   padding-top: 0;
-  padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .activities {
@@ -518,6 +524,8 @@ body {
 @media screen and (min-width: 1200px) {
   .team {
     --cards-in-row: 4;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -609,6 +617,8 @@ body {
 @media screen and (min-width: 1200px) {
   .clients {
     --cards-in-row: 6;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1409,8 +1419,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
@@ -1480,6 +1490,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-socials__item:not(:last-child) {

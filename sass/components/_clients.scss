@@ -9,6 +9,8 @@
 
     @media screen and (min-width: 1200px) {
         --cards-in-row: 6;
+
+        @include section(94px, 94px);
     }
 }
 
